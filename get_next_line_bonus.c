@@ -6,7 +6,7 @@
 /*   By: ctrinite <ctrinite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 19:17:11 by ctrinite          #+#    #+#             */
-/*   Updated: 2022/05/11 19:59:17 by ctrinite         ###   ########.fr       */
+/*   Updated: 2022/05/14 02:05:57 by ctrinite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_read_left_str(int fd, char *left_str)
 	char	*buff;
 	int		rd;
 
-	buff = 	malloc((BUFFER_SIZE + 1) * sizeof(char));
+	buff = malloc((BUFFER_SIZE + 1) * sizeof(char));
 	if (!buff)
 		return (0);
 	rd = 1;

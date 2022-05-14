@@ -6,18 +6,18 @@
 /*   By: ctrinite <ctrinite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 19:30:53 by ctrinite          #+#    #+#             */
-/*   Updated: 2022/05/11 19:39:50 by ctrinite         ###   ########.fr       */
+/*   Updated: 2022/05/14 02:09:08 by ctrinite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
-# define FT_PRINTF_H
+# define GET_NEXT_LINE_H
 
 # include <stdlib.h>
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 1000
-#endif
+# endif
 
 size_t	ft_strlen(char *s);
 char	*ft_strchr(char *s, int c);

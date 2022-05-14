@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctrinite <ctrinite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 15:01:44 by ctrinite          #+#    #+#             */
-/*   Updated: 2022/05/11 19:52:33 by ctrinite         ###   ########.fr       */
+/*   Updated: 2022/05/14 02:05:23 by ctrinite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,8 @@ char	*ft_strchr(char *s, int c)
 char	*ft_strjoin(char *left_str, char *buff)
 {
 	size_t	i;
-    size_t	j;
-    char	*str;
+	size_t	j;
+	char	*str;
 
 	if (!left_str)
 	{
@@ -78,7 +78,7 @@ char	*ft_getline(char *left_str)
 	i = 0;
 	if (!left_str[i])
 		return (0);
-	while(left_str[i] && left_str[i] != '\n')
+	while (left_str[i] && left_str[i] != '\n')
 		i++;
 	str = (char *)malloc(sizeof(char) * (i + 2));
 	if (!str)
@@ -118,11 +118,7 @@ char	*ft_new_left_str(char *left_str)
 	i++;
 	j = 0;
 	while (left_str[i])
-	{
-		str[j] = left_str[i];
-		i++;
-		j++;
-	}
+		str[j++] = left_str[i++];
 	str[j] = '\0';
 	free(left_str);
 	return (str);
